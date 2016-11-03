@@ -21,7 +21,7 @@ body{
 }
 .bar-time a{
   color: #999;
-text-decoration: none;
+  text-decoration: none;
   border: 0;
 }
 .bar-time a:hover{
@@ -63,7 +63,7 @@ h2 a:hover{
   font-family: sans-serif;
   line-height: 1.3em ;
   font-size: 1em;
-
+}
 .more-link{
   font-family: sans-serif;
   line-height: 1.3em ;
