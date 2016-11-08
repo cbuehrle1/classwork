@@ -1,6 +1,6 @@
 //function goes here
-var city = ["Dallas", "Houston", "Austin", "El Paso", "San Antonio"]
-var state = ["Texas", "New Mexico", "Louisiana", "Oklahoma"]
+var city = "Dallas"
+var state = "Texas"
 
 function whoBigger(a, b){
   if(a.length < b.length){
