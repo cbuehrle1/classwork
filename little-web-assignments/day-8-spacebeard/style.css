@@ -1,0 +1,125 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+header{
+  overflow: auto;
+  width: 100%;
+  background-color: orange;
+  padding: 16px 0;
+}
+.logo{
+  float: left;
+  width: 28.333%;
+  padding-left: 5%;
+  outline: solid 1px black;
+}
+.header-about{
+  float: left;
+  width: 33.333%;
+  text-align: center;
+  outline: solid 1px black;
+}
+header ul{
+  text-align: center;
+  outline: solid 1px black;
+}
+header ul li{
+  float: left;
+  width: 8.33%;
+  outline: solid 1px black;
+}
+.container{
+  overflow:auto;
+  width: 100%;
+}
+.secondary-header{
+  float: left;
+  width: 45%;
+  padding-left: 5%;
+  outline: solid 1px black;
+  background-color: pink;
+}
+.spacebeard{
+  float: left;
+  width: 50%;
+  outline: solid 1px black;
+  background-color: yellow;
+}
+.single-clmn-container{
+  background-color: grey;
+  margin: 0 auto 0 auto;
+  text-align: center;
+}
+.single-clmn-container p{
+  margin: 5px auto;
+  outline: solid 1px black;
+}
+.img-body{
+  float: left;
+  width: 50%;
+  outline: solid 1px black;
+  background-color: yellow;
+  padding: 1% 0 1% 0;
+  margin: 1px 0 1px 0;
+}
+footer{
+  overflow: auto;
+  width: 100%;
+  background-color: orange;
+  padding: 16px 0;
+  text-align: center;
+}
+.footer-img{
+  outline: solid 1px black;
+}
+footer ul{
+  margin: 0 auto;
+  width: 400px;
+}
+footer ul li{
+  float: left;
+  width: 14.2%;
+  margin: 0 auto;
+  outline: solid 1px black;
+}
