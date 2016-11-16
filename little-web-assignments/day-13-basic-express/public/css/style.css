@@ -1,0 +1,11 @@
+div{
+  text-align: center;
+  margin: 0 auto;
+  width: 960px;
+}
+div h1{
+  color: blue;
+}
+div p{
+  color: red;
+}
