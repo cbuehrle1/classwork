@@ -1,0 +1,225 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+header{
+  height: 200px;
+  width: 100%;
+  background-image: url("http://freetwitterheaders.net/wp-content/uploads/2012/12/Mountain-Landscape-Twitter-Headers-Twitter-Covers-580x290.jpg");
+  background-position: center;
+  background-size: cover;
+}
+.circle{
+  padding: 10px 10px;
+  width: 50px;
+  text-align: center;
+  border:solid 4px white;
+  position: absolute;
+  top: 165px;
+  left: 17%;
+  border-radius: 50%;
+  color: white;
+  background-color: black;
+  font-weight: bold;
+}
+.container{
+  overflow: auto;
+  padding-top: 75px;
+}
+.leftColumn{
+  float: left;
+  width: 30%;
+  font-family: sans-serif;
+}
+.leftColumn p{
+  margin-left: 60%;
+  padding-bottom: 10px;
+  font-size: 14px;
+}
+.nameBold{
+  font-weight: bold;
+}
+.searchKey{
+  margin-bottom: 3px;
+  font-size: 8px;
+  letter-spacing: -1px;
+  outline: 1px solid rgb(215, 215, 215);
+  padding: 7px;
+  width: 30%;
+  color: rgb(215, 215, 215);
+}
+.magGlass{
+  height: 12px;
+  width: 12px;
+  display: inline;
+  position: absolute;
+  top: 397px;
+  left: 26.5%;
+}
+.rightColumn{
+  float: left;
+  width: 70%;
+  font-family: sans-serif;
+}
+.rightColumn h1{
+  font-size: 2em;
+  font-weight: bold;
+  max-width: 500px;
+  padding-bottom: 15px;
+  line-height: 1.2em;
+}
+.rightColumn p{
+  font-style: italic;
+  font-size: 11px;
+  padding-bottom: 15px;
+}
+img{
+  height: 300px;
+  width: 225px;
+}
+.float-box{
+	position: fixed;
+	clear: both;
+	outline: 1px solid black;
+	bottom: 5%;
+	right: 0;
+	width: 250px;
+	height: 75px;
+	background-color: rgb(220, 220, 220);
+}
+.float-box p{
+	outline: solid 1px black;
+	font-size: 14px;
+	padding: 2px;
+	overflow: auto;
+	max-width: 250px;
+	font-family: sans-serif;
+}
+.bottom-box{
+	float: left;
+	width: 25%;
+}
+.bottom-box img{
+	width: 30px;
+	height: 30px;
+	position: relative;
+	bottom: -10px;
+	left: 25%;
+}
+.middle-item{
+	float: left;
+	width: 40%;
+	position: relative;
+	bottom: -10px;
+}
+.middle-item h1{
+	font-size: 14px;
+	font-weight: bold;
+	padding-bottom: 5px;
+}
+.middle-item p{
+	font-size: 10px;
+	font-weight: normal;
+	outline: none;
+	border: none;
+}
+.float-right1{
+	float: left;
+	width: 25%;
+	background-color: blue;
+	color: white;
+	border-radius: 3%;
+	position: relative;
+	bottom: -20px;
+	left: 5%;
+}
+.float-right1 p{
+	font-size: 14px;
+	text-align: center;
+}
+
+
+@media(max-width: 950px){
+  .searchKey{
+    display: none;
+  }
+  .magGlass{
+    display: none;
+  }
+  .SearchP{
+    display: none;
+  }
+}
+@media(max-width: 600px){
+  .leftColumn{
+    float: none;
+    width: auto;
+  }
+  .rightColumn{
+    float: none;
+    width: auto;
+  }
+  .leftColumn p{
+    margin: 2%;
+    padding-bottom: 10px;
+    font-size: 12px;
+  }
+  .rightColumn h1{
+    font-size: 1.5em;
+    font-weight: bold;
+    max-width: 500px;
+    padding-bottom: 15px;
+    line-height: 1.2em;
+    margin: 2%;
+  }
+  .rightColumn p{
+    font-style: italic;
+    font-size: 9px;
+    padding-bottom: 15px;
+    margin: 2%;
+  }
+  img{
+    height: auto;
+    width: 175px;
+    margin: 2%;
+  }
+}
