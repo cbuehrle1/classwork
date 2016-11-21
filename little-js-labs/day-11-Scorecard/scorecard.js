@@ -4,7 +4,7 @@ var fileImport = fs.readFileSync("Most+Recent+Cohorts+(Scorecard+Elements).csv",
 
 var lines = fileImport.split("\n");
 
-for(var i = 1; i < lines.length - 1; i++){
+for(var i = 1; i < 22 - 1; i++){
   var indivArray = lines[i].split(",");
   if(indivArray[32] === "NULL"){
   } else {

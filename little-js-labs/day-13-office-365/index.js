@@ -20,5 +20,6 @@ fs.readFile("Import_User_Sample_en.csv", "utf-8", function(err, data){
 
   }
 
-  console.log(parsed.UserNames);
+  console.log(parsed.UserNames
+  );
   });

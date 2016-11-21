@@ -28,7 +28,7 @@ function shortest(a, b, c){
       else {
         return eString;
       }
-    }
+  }
     return random(d, e);
   } else if( (d.length === f.length) && (d.length < e.length) ){
     function random(d, f){
