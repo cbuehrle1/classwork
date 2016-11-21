@@ -195,6 +195,13 @@ header{
   font-size: 19px;
   line-height: 28px;
 }
+.article a{
+  text-decoration: none;
+  color: #999;
+}
+.article a:hover{
+  color: black;
+}
 #mikael{
   font-size: 15px;
   padding-top: 6px;
@@ -217,8 +224,6 @@ header{
   padding-left: 10px;
   padding-right: 10px;
 }
-
-
 .footer-inputs{
   width: 620px;
   margin: 0 auto;
@@ -261,6 +266,17 @@ footer{
   font-size: 15px;
   opacity: 1;
 }
+footer a{
+  text-decoration: none;
+  color: #999999;
+}
+footer a:hover{
+  opacity: 1;
+  color: black;
+}
+footer img:hover{
+  opacity: 1;
+}
 footer p{
   display: inline;
   color: #999999;
@@ -270,28 +286,38 @@ footer img{
   opacity: .5;
 }
 @media(max-width: 619px){
-  header h1{
+  header{
+    max-width: 90%;
+  }
+  .h1-header{
     font-size: 31px;
     margin-top: 38px;
     line-height: 40px;
   }
-  header p{
-    font-size: 20px;
-    line-height: 31px;
-}
+  .purple-header{
+    font-size: 31px;
+    line-height: 40px;
+  }
+  #email1{
+    width: 95%;
+    margin-bottom: 0;
+  }
+  .button{
+    width: 100%;
+    margin-top: 20px;
+    margin-right: 10px;
+  }
   .make-this-year{
     max-width: 200px;
   }
-
   .instructors{
     width: 90%;
     margin-bottom: 30px;
   }
   .instr-pics{
     float: left;
-    width: 38%;
-    margin-left: 2%;
-    margin-right: 2%;
+    width: 35%;
+    margin-left: 10%;
   }
   .instr-pics img{
     float: none;
@@ -301,23 +327,25 @@ footer img{
   }
   .inst-text{
     float: left;
-    width: 54%;
+    width: 50%;
     margin-left: 2%;
     margin-right: 2%;
   }
   .text-float{
     padding-top: 30px;
     float: none;
+    text-align: left;
   }
   .last-text{
     float: none;
     padding-top: 30px;
+    text-align: left;
   }
   .article{
     padding-top: 30px;
     clear: both;
-    width: 80%;
-    margin: 0 auto;
+    width: 90%;
+    margin: 0 auto 20px auto;
   }
   .article h2{
     font-size: 20px;
@@ -326,5 +354,48 @@ footer img{
   .article p {
     font-size: 16px;
     line-height: 27px;
+  }
+  .img-links{
+    width: 100%;
+    line-height: 2em;
+    padding-top: 10px;
+  }
+  .img-links li{
+    width: 30%;
+    margin: 10px;
+    padding: 0;
+  }
+  li img{
+    width: 80px;
+    text-align: center;
+  }
+  #middle-pic{
+    width: 20%;
+    padding:  0;
+  }
+  #middle-pic img{
+    width: 80px;
+    text-align: center;
+  }
+  .footer-inputs{
+    width: 90%;
+  }
+  .p-footer{
+    font-size: 20px;
+    margin-top: 35px;
+  }
+  #email2{
+    width: 90%;
+    margin-bottom: 0;
+  }
+  footer{
+    clear: both;
+    width: 90%;
+  }
+  .made{
+    display: inline;
+  }
+  .footer-img{
+    display: inline;
   }
 }
