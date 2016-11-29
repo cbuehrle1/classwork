@@ -1,0 +1,66 @@
+body{
+  margin: 0;
+}
+header{
+  background-color: rgb(235, 235, 235);
+  padding: 25px;
+  margin: 0;
+  font-size: 20px;
+  font-family: Helvetica;
+  color: red;
+}
+
+.gmail{
+  border-bottom: dotted 1px black;
+  padding: 5px;
+}
+.gmail p{
+  padding: 0px;
+  margin: 0px;
+  font-size: 22px;
+  color: red;
+  font-family: Helvetica;
+  margin-left: 27px;
+}
+p span{
+  font-size: 10px;
+  vertical-align: middle;
+}
+
+.compose{
+  width: 100px;
+  text-align: center;
+  margin-left: 30px;
+  margin-top: 15px;
+  border-radius: 3%;
+  padding: 10px;
+  background-color: red;
+  color: white;
+  font-family: Helvetica;
+  font-weight: bold;
+  font-size: 12px;
+}
+ul{
+  padding: 0;
+}
+li{
+  list-style-type: none;
+  width: 125px;
+  font-family: Helvetica;
+  font-size: 12px;
+  padding: 5px 25px 5px 25px;
+  margin-left: 5px;
+}
+li:hover{
+  background-color: rgb(235, 235, 235);
+}
+.toggled{
+  color: red;
+  border-left: solid 4px red;
+  padding-left: 21px;
+  background-color: white;
+  font-weight: bold;
+}
+.toggled:hover{
+  background-color: white;
+}
