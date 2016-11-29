@@ -1,0 +1,18 @@
+.bubble{
+  background-color: white;
+  border: solid 4px black;
+  border-radius: 50%;
+  display: inline-block;
+  text-align: center;
+  padding: 5%;
+  font-size: 12px;
+}
+.on{
+  background-color: #7cfc00;
+  border: solid 4px #228b22;
+  border-radius: 50%;
+  display: inline-block;
+  text-align: center;
+  padding: 5%;
+  font-size: 12px;
+}
