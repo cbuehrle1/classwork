@@ -3,13 +3,13 @@ body{
 }
 header{
   background-color: rgb(235, 235, 235);
-  padding: 25px;
-  margin: 0;
-  font-size: 20px;
-  font-family: Helvetica;
-  color: red;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 25px;
 }
-
+header img{
+  width: 100px;
+}
 .gmail{
   border-bottom: dotted 1px black;
   padding: 5px;
@@ -20,7 +20,7 @@ header{
   font-size: 22px;
   color: red;
   font-family: Helvetica;
-  margin-left: 27px;
+  margin-left: 25px;
 }
 p span{
   font-size: 10px;
