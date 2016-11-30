@@ -1,0 +1,119 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+.octodex{
+  overflow: auto;
+  font-family: sans-serif;
+}
+.octocat{
+  float: left;
+  margin: 1.15%;
+  width: 31%;
+}
+.octocat img{
+  width: 100%;
+  outline: solid 2px rgb(215, 215, 215);
+}
+.image-footer{
+  overflow: auto;
+  padding-left: 8px;
+  padding-top: 10px;
+  padding-bottom: 8px;
+  border-bottom: solid 2px rgb(215, 215, 215);
+  font-size: 14px;
+  position: relative;
+}
+.image-footer span{
+  font-weight: bold;
+}
+
+.image-footer a{
+  font-weight: bolder;
+  text-decoration: none;
+  color: black;
+}
+.image-footer p{
+  position: absolute;
+  display: inline-block;
+  top: -9px;
+  right: 2px;
+  font-size: 22px;
+  color: rgb(135, 135, 135);
+}
+.image-caption{
+  float: right;
+  width: 80%;
+  text-align: right;
+  font-size: 14px;
+  color: rgb(135, 135, 135);
+}
+.image-number{
+  display: inline-block;
+  color: rgb(215, 215, 215);
+  line-height: 20px;
+}
+.authors{
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 2%;
+}
+.image-caption img {
+  width: 20px;
+  outline: none;
+  border-radius: 5%;
+}
+@media(max-width: 939px){
+  .octocat{
+    width: 47.5%;
+  }
+}
+@media(max-width: 616px){
+  .octocat{
+    float: none;
+    clear: both;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    min-width: 295px;
+  }
+}
