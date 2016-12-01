@@ -1,0 +1,41 @@
+div{
+  height: 50px;
+  background-color: blue;
+}
+.hide{
+  display: none;
+}
+.facebook{
+  background-image: url("facebook.jpg");
+  height: 50px;
+  width: 175px;
+  background-position: -10px -20px;
+}
+.like-button{
+  background-image: url("facebook.jpg");
+  height: 17px;
+  width: 17px;
+  background-position: -53px -127px;
+}
+.dw{
+  height: 150px;
+  width: 191px;
+  background-image: url("dw.jpg");
+}
+.dw:hover{
+  background-position: -192px 0;
+}
+.monster{
+  background-image: url("monster.png");
+  height: 115px;
+  width: 120px;
+}
+.position-1{
+  background-position: 0 0;
+}
+.position-2{
+  background-position: -119px 0;
+}
+.position-3{
+  background-position: -237px 0;
+}
