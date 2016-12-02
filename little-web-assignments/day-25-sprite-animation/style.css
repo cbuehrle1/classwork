@@ -1,0 +1,24 @@
+div{
+  background-image: url("Waluigi.png");
+  height: 45px;
+}
+.position-1{
+  background-position: -165px 0;
+  width: 28px;
+}
+.position-2{
+  background-position: -139px 0;
+  width: 27px;
+}
+.position-3{
+  background-position: -114px 0;
+  width: 26px;
+}
+.position-4{
+  background-position: -89px 0;
+  width: 26px;
+}
+.position-5{
+  background-position: -63px 0;
+  width: 27px;
+}
