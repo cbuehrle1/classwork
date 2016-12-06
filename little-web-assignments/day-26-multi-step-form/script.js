@@ -10,25 +10,23 @@ var submitB = document.querySelector("#submit");
 
 var count = 0;
 
-pageArr[0}.style.display = "block"
+pageArr[0].style.display = "block";
 
 nextB.addEventListener("click", function(){
 
-  if (count === 3){
-  } else {
+  if (count < 3){
     count = count + 1;
+    pageArr[count].style.display = "block";
   }
-  pageArr[count].style.display = "block";
+
+
 });
 
 prevB.addEventListener("click", function(){
 
-  if (count === 0){
-  } else {
+  if (count > 0){
     count = count - 1;
+    pageArr[count].style.display = "block";
   }
-  pageArr[count].style.display = "block";
+  
 });
-
-
-console.log(pageArr);
