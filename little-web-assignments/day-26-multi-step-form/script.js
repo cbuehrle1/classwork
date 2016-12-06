@@ -25,8 +25,8 @@ if (count === null) {
 
 function showHideButtons(){
   if (count === 3){
+    prevB.style.display = "inline";
     submitB.style.display = "inline";
-    console.log("count?")
     nextB.style.display = "none";
   } else if (count === 0){
     prevB.style.display = "none";
