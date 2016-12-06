@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8"/>
+  <title>Multi Step Form</title>
+  <link href="style.css" rel="stylesheet" />
+</head>
+<body>
+  <div class="container">
+  <form>
+    <div class="form-pages">
+      <div class="page">
+        <label for="first-name">First Name:
+          <input type="text" name="first-name"></input>
+        </label>
+        <label for="last-name">Last Name:
+          <input type="text" name="last-name"></input>
+        </label>
+      </div>
+      <div class="page">
+          <p>Choose your meat:</p>
+          <label>Pepperoni
+            <input type="radio" name="meat"></input>
+          </label>
+          <label>Ham
+            <input type="radio" name="meat"></input>
+          </label>
+          <label>Bacon
+            <input type="radio" name="meat"></input>
+          </label>
+          <label>Sausage
+            <input type="radio" name="meat"></input>
+          </label>
+      </div>
+      <div class="page">
+        <p>Choose your other toppings:</p>
+        <label>Onions
+          <input type="checkbox" name="top"></input>
+        </label>
+        <label>Black Olives
+          <input type="checkbox" name="top"></input>
+        </label>
+        <label>Green Peppers
+          <input type="checkbox" name="top"></input>
+        </label>
+        <label>Pineapple
+          <input type="checkbox" name="top"></input>
+        </label>
+        <label>Jalape&#241;os
+          <input type="checkbox" name="top"></input>
+        </label>
+      </div>
+      <div class="page">
+        <p>Choose your cheese:</p>
+        <label>Cheddar
+          <input type="radio" name="cheese"></input>
+        </label>
+        <label>Provolone
+          <input type="radio" name="cheese"></input>
+        </label>
+        <label>Parmesan
+          <input type="radio" name="cheese"></input>
+        </label>
+        <label>American
+          <input type="radio" name="cheese"></input>
+        </label>
+      </div>
+    </div>
+      <button id="prev">Previous</button>
+      <button id="next">Next</button>
+      <button id="submit">Submit</button>
+  </form>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
