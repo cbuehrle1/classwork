@@ -10,7 +10,7 @@ var submitB = document.querySelector("#submit");
 
 var count = 0;
 
-pageArr[count].style.display = "block"
+pageArr[0}.style.display = "block"
 
 nextB.addEventListener("click", function(){
 
