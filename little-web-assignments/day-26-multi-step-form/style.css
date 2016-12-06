@@ -1,10 +1,10 @@
 div{
-  border: solid 1px black;
   padding: 20px;
   margin: 10px auto 10px auto;
 }
 .container{
-`width: 600px;`
+  width: 400px;
+  margin: 0 auto;
 }
 label{
   display: block;
@@ -17,4 +17,16 @@ label{
   border: solid 1px black;
   padding: 0;
   margin: 0;
+}
+.buttons{
+  padding: 0px;
+}
+#prev{
+  display: none;
+}
+#next{
+  display: inline;
+}
+#submit{
+  display: none;
 }
