@@ -34,32 +34,42 @@ function showHideButtons(){
     nextB.style.display = "inline";
     submitB.style.display = "none";
   }
-  
+
 }
+
+var validationErr = document.createElement("p");
+
+validationErr.textContent = "Please provide a response."
+
+validationErr.classList.add("incomplete-p");
+
+validationErr.style.display = "none";
+
+pages.appendChild(validationErr);
 
 nextB.addEventListener("click", function(){
 
 
   if (count === 0 && firstName.value === "" && lastName.value !== ""){
-    console.log("did this work")
     firstName.classList.add("incomplete");
+    validationErr.style.display = "block";
   }
   else if (count === 0 && firstName.value !== "" && lastName.value === ""){
     lastName.classList.add("incomplete");
-    console.log("did this work2")
+    validationErr.style.display = "block";
   }
   else if (count === 0 && firstName.value === "" && lastName.value === ""){
     firstName.classList.add("incomplete");
     lastName.classList.add("incomplete");
-    console.log("did this work3")
+    validationErr.style.display = "block";
   }
   else if (count === 1 && radioButtonLoop(1) === false){
     pageArr[count].classList.add("incomplete-buttons");
-    console.log("did this work4")
+    validationErr.style.display = "block";
   }
   else if (count === 2 && radioButtonLoop(2) === false){
     pageArr[count].classList.add("incomplete-buttons");
-    console.log("did this work5");
+    validationErr.style.display = "block";
   }
   else if (count < 3){
     count = count + 1;
@@ -67,9 +77,9 @@ nextB.addEventListener("click", function(){
     pageArr[count - 1].style.display = "none";
     pageArr[count].style.display = "block";
     showHideButtons();
+    removeErrId(validationErr);
   }
 
-  removeErrId();
 
 });
 
@@ -90,10 +100,11 @@ function radioButtonLoop(count) {
   var allFalse = 0;
 
   for (var i = 1; i < pageArr[count].children.length; i++){
+
     if (pageArr[count].children[i].children[0].checked === false){
       allFalse++;
     };
-    console.log(allFalse)
+
   }
 
   if (allFalse === pageArr[count].children.length - 1){
@@ -102,19 +113,22 @@ function radioButtonLoop(count) {
 
 }
 
-function removeErrId(){
+function removeErrId(validationErr){
 
   if (count === 1){
     firstName.classList.remove("incomplete");
     lastName.classList.remove("incomplete");
+    validationErr.style.display = "none";
   }
 
   if (count === 2){
     pageArr[1].classList.remove("incomplete-buttons");
+    validationErr.style.display = "none";
   }
 
   if (count === 3){
     pageArr[2].classList.remove("incomplete-buttons");
+    validationErr.style.display = "none";
   }
 
 }

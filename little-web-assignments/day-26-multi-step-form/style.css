@@ -27,6 +27,10 @@ label{
 .incomplete-buttons{
   color: red;
 }
+.incomplete-p{
+  color: red;
+  padding-left: 30px;
+}
 #prev{
   display: none;
 }
