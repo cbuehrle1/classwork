@@ -1,0 +1,432 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+@import "variables.scss";
+
+.black-bg{
+  background-color: $colorBlack;
+}
+header{
+  font-family: $font;
+  width: $mainWidth;
+  margin: 0 auto;
+  overflow: auto;
+}
+.header-logo{
+  width:110px;
+  padding: 50px 0 0 0;
+  margin-bottom: 15px;
+}
+.make-this-year{
+  display: block;
+}
+.h1-header{
+  color: white;
+  font-size: 46px;
+  font-weight: bold;
+  margin-top: 60px;
+}
+.purple-header{
+  color: $colorPurple;
+  font-size: 46px;
+  font-weight: bold;
+}
+.p-header{
+  color: $colorWhite;
+  font-size: 22px;
+  margin-top: 69px;
+
+  span{
+    font-weight: bold;
+  }
+}
+.button{
+    margin-top: 40px;
+    margin-bottom: 80px;
+    width: 190px;
+    color: $colorWhite;
+    padding: 20px 20px;
+    background: $colorPurple;
+    font-size: 20px;
+    font-family: $font;
+    border-radius: 3px;
+    border: 0;
+    outline: none;
+    display: inline-block;
+    float: none;
+  }
+.button:hover{
+  background-color: $secondaryPurple;
+}
+#email1{
+    margin-top: 40px;
+    margin-bottom: 80px;
+    color: #b2b2b2;
+    opacity: 1;
+    width: 370px;
+    padding: 19px 20px;
+    margin-right: 16px;
+    background: #E6E6E6;
+    color: #A7A7A7;
+    float: left;
+    border: solid 2px transparent;
+    font-size: 20px;
+    font-family: $font;
+    border-radius: 3px;
+    display: inline;
+  }
+.instructors{
+  font-family: $font;
+  width: $mainWidth;
+  margin: 0 auto;
+
+  h2{
+    margin-top: 77px;
+    font-size: 22px;
+    line-height: 21px;
+    margin-bottom: 36px;
+    font-weight: bold;
+  }
+
+  }
+.instr-pics{
+  clear: both;
+  overflow: auto;
+  width: $mainWidth;
+  margin: 0 auto;
+  }
+.first-two{
+  height: 130px;
+  width: 193px;
+  margin-right: 20px;
+  float: left;
+  }
+.last-pic{
+  height: 130px;
+  width: 193px;
+  float: left;
+  margin: 0;
+ }
+.inst-text{
+  width: $mainWidth;
+  margin: 0 auto;
+  overflow: auto;
+  }
+.text-float{
+  float: left;
+  width: 193px;
+  margin-right: 20px;
+
+  h2{
+    font-style: normal;
+    font-family: $font;
+    display: block;
+    margin: 11px 0 4px 0px;
+    font-size: 19px;
+    color: #000000;
+  }
+
+  p{
+    font-size: 15px;
+    font-family: $font;
+    line-height: 21px;
+    color: #9c9c9c;
+  }
+}
+.last-text{
+    float: left;
+    width: 193px;
+
+    h2{
+      font-style: normal;
+      font-family: $font;
+      display: block;
+      margin: 11px 0 4px 0;
+      font-size: 19px;
+      color: #000000;
+    }
+
+    p{
+      font-size: 15px;
+      font-family: $font;
+      line-height: 21px;
+      color: #9c9c9c;
+    }
+  }
+.article{
+  width: $mainWidth;
+  font-family: $font;
+  margin: 89px auto 0 auto;
+
+  h2{
+    font-size: 22px;
+    font-weight: bold;
+  }
+
+  p{
+     margin: 28px 0;
+     font-size: 19px;
+     line-height: 28px;
+  }
+
+  a{
+    text-decoration: none;
+    color: #999;
+  }
+
+  a:hover{
+    color: $colorBlack;
+  }
+
+}
+#mikael{
+  font-size: 15px;
+  padding-top: 6px;
+  color: #999999;
+  margin-top: -18px;
+}
+.img-links{
+  width: 620px;
+  margin: 0 auto;
+  padding-top: 100px;
+  overflow: auto;
+
+  ul{
+    overflow: auto;
+  }
+
+  li{
+    float: left;
+    width: 30%;
+    text-align: center;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+
+.footer-inputs{
+  width: $mainWidth;
+  margin: 0 auto;
+}
+
+.p-footer{
+  color: $colorBlack;
+  font-size: 22px;
+  margin-top: 69px;
+  line-height: 1.4em;
+  font-family: $font;
+
+  span{
+    font-weight: bold;
+  }
+}
+
+#email2{
+    margin-top: 40px;
+    margin-bottom: 80px;
+    color: #b2b2b2;
+    opacity: 1;
+    width: 370px;
+    padding: 19px 20px;
+    margin-right: 16px;
+    background: #E6E6E6;
+    color: #A7A7A7;
+    float: left;
+    border: solid 2px transparent;
+    font-size: 20px;
+    font-family: $font;
+    border-radius: 3px;
+    display: inline;
+  }
+
+  footer{
+    margin-top: 25px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 65px;
+    width: $mainWidth;
+    font-family: $font;
+    font-size: 15px;
+    opacity: 1;
+
+    a{
+      text-decoration: none;
+      color: #999999;
+    }
+
+    a:hover{
+      opacity: 1;
+      color: $colorBlack;
+    }
+
+    img{
+      display: inline;
+      opacity: .5;
+    }
+
+    img:hover{
+      opacity: 1;
+    }
+
+    p{
+      display: inline;
+      opacity: .5;
+    }
+
+  }
+
+  @media(max-width: 619px){
+    header{
+      max-width: 90%;
+    }
+    .h1-header{
+      font-size: 31px;
+      margin-top: 38px;
+      line-height: 40px;
+    }
+    .purple-header{
+      font-size: 31px;
+      line-height: 40px;
+    }
+    #email1{
+      width: 95%;
+      margin-bottom: 0;
+    }
+    .button{
+      width: 100%;
+      margin-top: 20px;
+      margin-right: 10px;
+    }
+    .make-this-year{
+      max-width: 200px;
+    }
+    .instructors{
+      width: 90%;
+      margin-bottom: 30px;
+    }
+    .instr-pics{
+      float: left;
+      width: 35%;
+      margin-left: 10%;
+    }
+    .instr-pics img{
+      float: none;
+      width: 110px;
+      height: 110px;
+      padding-top: 20px;
+    }
+    .inst-text{
+      float: left;
+      width: 50%;
+      margin-left: 2%;
+      margin-right: 2%;
+    }
+    .text-float{
+      padding-top: 30px;
+      float: none;
+      text-align: left;
+    }
+    .last-text{
+      float: none;
+      padding-top: 30px;
+      text-align: left;
+    }
+    .article{
+      padding-top: 30px;
+      clear: both;
+      width: 90%;
+      margin: 0 auto 20px auto;
+    }
+    .article h2{
+      font-size: 20px;
+      line-height: 1.4em;
+    }
+    .article p {
+      font-size: 16px;
+      line-height: 27px;
+    }
+    .img-links{
+      width: 100%;
+      line-height: 2em;
+      padding-top: 10px;
+    }
+    .img-links li{
+      width: 30%;
+      margin: 10px;
+      padding: 0;
+    }
+    li img{
+      width: 80px;
+      text-align: center;
+    }
+    #middle-pic{
+      width: 20%;
+      padding:  0;
+    }
+    #middle-pic img{
+      width: 80px;
+      text-align: center;
+    }
+    .footer-inputs{
+      width: 90%;
+    }
+    .p-footer{
+      font-size: 20px;
+      margin-top: 35px;
+    }
+    #email2{
+      width: 90%;
+      margin-bottom: 0;
+    }
+    footer{
+      clear: both;
+      width: 90%;
+    }
+    .made{
+      display: inline;
+    }
+    .footer-img{
+      display: inline;
+    }
+  }
