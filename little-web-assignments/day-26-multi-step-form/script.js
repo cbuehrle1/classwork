@@ -8,8 +8,6 @@ var firstName = document.querySelector(".first-name input");
 var lastName = document.querySelector(".last-name input");
 var count = localStorageValue;
 
-console.log(count);
-console.log()
 
 if (count === null) {
   count = 0;
