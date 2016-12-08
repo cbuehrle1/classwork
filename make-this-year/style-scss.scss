@@ -71,6 +71,12 @@ header{
   color: $colorPurple;
   font-size: 46px;
   font-weight: bold;
+	display: inline-block;
+}
+.purple-bar{
+	color: $colorPurple;
+	display: inline-block;
+	font-size: 46px;
 }
 .p-header{
   color: $colorWhite;

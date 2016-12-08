@@ -15,9 +15,11 @@ setInterval(function(){
     purpleDiv.textContent = textThatScrolls[i].slice(0, counter)
     counter++;
   } else if (direction === "forward" && counter === textThatScrolls[i].length){
-    direction = "backword"
-    purpleDiv.textContent = textThatScrolls[i].slice(0, counter);
-    counter = counter - 1;
+    setTimeout(function(){
+      direction = "backword"
+      purpleDiv.textContent = textThatScrolls[i].slice(0, counter);
+      counter = counter - 1;
+    }, 200)
   } else if (direction === "backword" && counter < textThatScrolls[i].length && counter >= 1){
     counter = counter - 1;
     purpleDiv.textContent = textThatScrolls[i].slice(0, counter);
