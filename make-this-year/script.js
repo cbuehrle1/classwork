@@ -27,7 +27,6 @@ setInterval(function(){
     purpleDiv.textContent = textThatScrolls[i].slice(0, counter);
     direction = "forward";
 
-    console.log(textThatScrolls[i])
 
     if (i === textThatScrolls.length - 1){
       i = 0;
@@ -35,7 +34,6 @@ setInterval(function(){
       i = i + 1;
     }
 
-    console.log(textThatScrolls[i])
 
   }
 
