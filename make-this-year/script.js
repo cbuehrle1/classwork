@@ -1,41 +1,54 @@
 var purpleDiv = document.querySelector(".purple-header");
+var stringItems = ["an Apple Watch app", "a video course", "a podcast", "a blog", "a personal website", "an iPhone app", "an email course", "an Ebook", "an e-commerce site", "a newsletter"]
+var count = 0;
+var bigCounter = 0;
+var speed = 40;
+var intervalID;
 
-var textThatScrolls = ["an Apple Watch app", "a video course", "a podcast", "a blog", "a personal website", "an iPhone app", "an email course", "an Ebook", "an e-commerce site", "a newsletter"]
+intervalID = setInterval(goForward, speed);
 
-var counter = 0;
+function goForward (){
 
-var i = 0;
+  if (count === stringItems[bigCounter].length){
 
-var direction = "forward";
+    clearInterval(intervalID);
+    setTimeout(stopWaiting, 1000);
 
+  } else {
 
-setInterval(function(){
-
-  if (direction === "forward" && counter < textThatScrolls[i].length){
-    purpleDiv.textContent = textThatScrolls[i].slice(0, counter)
-    counter++;
-  } else if (direction === "forward" && counter === textThatScrolls[i].length){
-    setTimeout(function(){
-      direction = "backword"
-      purpleDiv.textContent = textThatScrolls[i].slice(0, counter);
-      counter = counter - 1;
-    }, 200)
-  } else if (direction === "backword" && counter < textThatScrolls[i].length && counter >= 1){
-    counter = counter - 1;
-    purpleDiv.textContent = textThatScrolls[i].slice(0, counter);
-  } else if (direction === "backword" && counter === 0){
-    purpleDiv.textContent = textThatScrolls[i].slice(0, counter);
-    direction = "forward";
-
-
-    if (i === textThatScrolls.length - 1){
-      i = 0;
-    } else {
-      i = i + 1;
-    }
-
+    count++;
+    purpleDiv.textContent = stringItems[bigCounter].slice(0, count);
 
   }
 
+}
 
-}, 200)
+function goBackward(){
+
+  if (count === 0 && bigCounter === stringItems.length - 1){
+
+    clearInterval(intervalID);
+    bigCounter = 0;
+    intervalID = setInterval(goForward, speed)
+
+  } else if (count === 0){
+
+    clearInterval(intervalID);
+    bigCounter++;
+    intervalID = setInterval(goForward, speed);
+
+  }
+    else {
+
+    count--;
+    purpleDiv.textContent = stringItems[bigCounter].slice(0, count);
+
+  }
+
+}
+
+function stopWaiting(){
+
+    intervalID = setInterval(goBackward, speed);
+
+}
