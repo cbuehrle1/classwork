@@ -7,24 +7,31 @@
 
   promise.done(function(data){
 
+    html = ""
+
     for(var i = 0; i < data.characters.length; i++){
       var character = data.characters[i];
 
-      var li = document.createElement("li");
-      var h1 = document.createElement("h1");
-      var h2 = document.createElement("h2");
-      var p = document.createElement("p");
+      // var li = document.createElement("li");
+      // var h1 = document.createElement("h1");
+      // var h2 = document.createElement("h2");
+      // var p = document.createElement("p");
+      //
+      // h1.textContent = character.name
+      // h2.textContent = character.race
+      // p.textContent = character.description
+      //
+      // list.appendChild(li);
+      // li.appendChild(h1);
+      // li.appendChild(h2);
+      // li.appendChild(p);
 
-      h1.textContent = character.name
-      h2.textContent = character.race
-      p.textContent = character.description
-
-      list.appendChild(li);
-      li.appendChild(h1);
-      li.appendChild(h2);
-      li.appendChild(p);
+      var output = Mustache.render("<li><h1>{{name}}</h1><h2>{{race}}</h2><p>{{description}}</p></li>", character);
+      html += output;
 
     }
+
+    list.innerHTML = html;
   });
 
 })()
