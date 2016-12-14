@@ -153,10 +153,12 @@ footer p{
 		float: none;
 		background-color: red;
 		margin: 0 auto;
+		width: auto;
 	}
 	.quote-pic, .middle-text{
 		float: none;
 		background-color: yellow;
 		margin: 0 auto;
+		width: auto;
 	}
 }
