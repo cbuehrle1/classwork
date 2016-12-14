@@ -20,8 +20,11 @@
 
   });
 
+  var template = document.querySelector("#character-template");
+  var templateHTML = template.innerHTML;
+
   mutantList.addEventListener("click", function(evt) {
-    console.log(evt.target);
+
     var attr = evt.target.getAttribute("data-index");
 
     var currentlySelected = document.querySelector(".selected")
@@ -35,30 +38,10 @@
     var display = document.querySelector(".display");
     display.innerHTML = ""
 
-    var h2 = document.createElement("h2");
-    h2.textContent = xman.realName
-    display.appendChild(h2);
+    var output = Mustache.render(templateHTML, xman);
 
-    var img = document.createElement("img");
-    img.src = xman.imageUrl
-    display.appendChild(img)
+    display.innerHTML = output;
 
-    var description = document.createElement("p");
-    description.textContent = xman.description
-    display.appendChild(description)
-
-    var powers = document.createElement("ul");
-    powers.textContent = "Powers:";
-    powers.classList.add("power-list");
-
-    for (var c = 0; c < apiData.xmen[attr].powers.length; c++){
-      var theMoves = apiData.xmen[attr].powers[c]
-      var power = document.createElement("li");
-      power.textContent = theMoves;
-      powers.appendChild(power);
-    }
-
-    display.appendChild(powers);
   })
-  
+
 })()
