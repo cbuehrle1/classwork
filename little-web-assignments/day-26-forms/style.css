@@ -1,0 +1,14 @@
+label {
+  display: block;
+  margin: 10px 0; }
+
+form {
+  border: solid 3px orange;
+  padding: 20px; }
+
+button {
+  display: block;
+  margin: 20px 0; }
+
+select {
+  display: block; }
