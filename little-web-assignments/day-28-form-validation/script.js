@@ -14,19 +14,19 @@ submitB.addEventListener("click", function(evt){
   if (firstNameInput.value === ""){
     addClass(evt, firstNameInput);
   } else {
-    removeClass(evt, firstNameInput);
+    removeClass(firstNameInput);
   }
 
   if (lastNameInput.value === ""){
     addClass(evt, lastNameInput);
   } else {
-    removeClass(evt, lastNameInput);
+    removeClass(lastNameInput);
   }
 
   if (bioInput.value.length < 20){
     addClass(evt, bioInput);
   } else {
-    removeClass(evt, bioInput);
+    removeClass(bioInput);
   }
 
 });
@@ -36,7 +36,7 @@ function addClass(evt, domElement){
   domElement.classList.add("empty-input");
 };
 
-function removeClass(evt, domElement){
+function removeClass(domElement){
   domElement.classList.remove("empty-input");
 };
 
