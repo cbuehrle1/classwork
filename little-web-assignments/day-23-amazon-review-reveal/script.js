@@ -6,10 +6,7 @@
   var containerHeight = document.querySelector(".client-height");
   var constrainedHeight = document.querySelector(".shown")
 
-
-
   var height = constrainedHeight.clientHeight;
-
 
   var heightNormal = containerHeight.clientHeight;
 
