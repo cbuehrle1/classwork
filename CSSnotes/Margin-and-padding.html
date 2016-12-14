@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Selectors</title>
+    <link href="style.css" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css?family=Sanchez" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <body>
+    <header class="version-two">
+      <div class="hidden"><a href="index.html">CSS HOME</a></div>
+      <ul class="header-list">
+        <span><li><a href="selectors.html">Selectors</a></li></span>
+        <span><li><a href="Pseudo-classes.html">Pseudo</a></ii></span>
+        <span><li><a href="CSS-reset.html">Reset</a></li></span>
+        <span><li><a href="css-transition.html">Transition</a></li></span>
+        <span><li><a href="Margin-and-padding.html">Box Model</a></ii></span>
+        <span><li><a href="css-web-fonts.html">Fonts</a></li></span>
+        <span><li><a href="image.html">Image</a></ii></span>
+      </ul>
+      <div class="home">
+        <a href="index.html">CSS Notes</a>
+      </div>
+    </header>
+    <div class="container">
+        <div class="content">
+          <h2 class="secondary-header">Margins, Padding, and the Content Box</h2>
+          <div class="body-text">
+            <p>All HTML elements can be considered as boxes. In CSS, the term "box model" is used when talking about design and layout.
+              The CSS box model is essentially a box that wraps around every HTML element. It consists of: margins, borders, padding, and the actual content.</p>
+            <ul class="listthing">
+              <li><strong>Content</strong> - The content of the box, where text and images appear</li>
+              <li><strong>Padding</strong> - Clears an area around the content. The padding is transparent</li>
+              <li><strong>Border</strong> - A border that goes around the padding and content</li>
+              <li><strong>Margin</strong> - Clears an area outside the border. The margin is transparent</li></ul>
+          </div>
+          <h2 class="secondary-header">Width and Height of an Element</h2>
+          <div class="body-text">
+            <p class="less-spacing">In order to set the width and height of an element correctly in all browsers, you need to know how the box model works.</p>
+            <p class="less-spacing">The total width of an element should be calculated like this:</p>
+            <p class="less-spacing">Total element width = width + left padding + right padding + left border + right border + left margin + right margin</p>
+            <p class="less-spacing">The total height of an element should be calculated like this:</p>
+            <p class="less-spacing">Total element height = height + top padding + bottom padding + top border + bottom border + top margin + bottom margin</p>
+            <p class="less-spacing">For more detailed information outside this page, please head to <a class="darker" href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Box_Model/Introduction_to_the_CSS_box_model">Mozilla Developer Network.</a></p>
+          </div>
+        </div>
+      </div>
+    <footer>
+      <p>Chad Buehrle</p>
+    </footer>
+  </body>
+</html>
