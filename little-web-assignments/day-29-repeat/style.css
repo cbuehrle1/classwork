@@ -54,3 +54,7 @@ table {
 .on{
 	background-color: yellow;
 }
+.other-on{
+	background-color: green;
+	color: white;
+}
