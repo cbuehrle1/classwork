@@ -84,3 +84,19 @@ h2{
   font-weight: bold;
   padding-bottom: 5px;
 }
+.page-counter{
+  display: inline-block;
+  background-color: orange;
+  color: white;
+  padding: 15px;
+}
+.page-nav{
+  vertical-align: middle;
+  padding-top: 15px;
+  display: none;
+}
+.grey{
+  color: grey;
+  border: grey;
+  background-color: rgb(235, 235, 235);
+}
