@@ -1056,7 +1056,7 @@ function itemsBtwn14And18 (data){
   for (var i = 0; i < data.length; i++){
     var item = data[i];
 
-    if (item.price >= 14.00 && item.price <= 18.00){
+    if (item.price >= 14.00 && item.price <= 18.00 && item.currency_code === "USD"){
       output.push(item)
     }
   }
@@ -1064,8 +1064,8 @@ function itemsBtwn14And18 (data){
 }
 
 var result = itemsBtwn14And18(items);
-//
-// console.log(result)
+
+console.log(result)
 
 
 // Log the name and price of every item with a "GBP" currency code and print its name and price.
@@ -1148,10 +1148,10 @@ function madeBySeller (data){
       output.push(item);
     }
   }
-  console.log(output.length)
+  // console.log(output.length)
   return output;
 }
 
 var result = madeBySeller(items);
 
-console.log(result)
+// console.log(result)
