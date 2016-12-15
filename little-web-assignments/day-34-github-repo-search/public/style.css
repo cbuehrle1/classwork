@@ -70,6 +70,9 @@ h1 {
 a {
   text-decoration: none; }
 
+.not-blue {
+  color: black; }
+
 h2 {
   font-size: 24px;
   font-weight: bold;

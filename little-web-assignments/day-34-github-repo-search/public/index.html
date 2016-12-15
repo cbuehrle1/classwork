@@ -20,7 +20,7 @@
     <script type="text/html" id="template">
       <div class="repo">
         <h2><a href="{{html_url}}">{{name}}</a></h2>
-        <p>By: {{owner.login}}</p>
+        <p>By: <a href="{{owner.html_url}}" class="not-blue">{{owner.login}}</a></p>
       </div>
     </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/oj.mustache/0.7.2/oj.mustache.js"></script>
