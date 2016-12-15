@@ -4,24 +4,21 @@
 
   <head>
     <meta charset="utf-8">
-    <title>beer-api</title>
+    <title>public</title>
     <link href="style.css" rel="stylesheet" />
   </head>
 
   <body>
-    <h1>beer-api</h1>
-    <button class="up-button">Next</button>
-    <button class="down-button">Back</button>
-    <ul class="beer-stuff">
-    </ul>
+    <h1>Github Repo Search</h1>
+    <input type="text" class="search-input"
+    <input class="query-search">
+    <div class="display">
+    </display>
 
 
-    <script type="text/html" class="beer-template">
-      <ul>{{name}}
-        {{#ingredients.malt}}
-          <li>{{name}}</li>
-        {{/ingredients.malt}}
-      </ul>
+    <script type="text/html" id="template">
+      <h2><a href="{{html_url}}">{{name}}</a></h2>
+      <p>By: {{owner.login}}</p>
     </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/oj.mustache/0.7.2/oj.mustache.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>

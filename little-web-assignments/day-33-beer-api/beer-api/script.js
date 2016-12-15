@@ -5,9 +5,30 @@ function make_base_auth(user, password) {
   var hash = btoa(tok);
   return "Basic " + hash;
 }
+var page = 1;
+var upButton = document.querySelector(".up-button");
+var downButton = document.querySelector(".down-button");
 
+upButton.addEventListener("click", function(){
+
+  if (page < 10){
+  page++;
+  thePage();
+  }
+})
+
+downButton. addEventListener("click", function(){
+
+  if (page != 1){
+    page--;
+    thePage();
+  }
+
+})
+
+function thePage() {
 var promise = $.ajax({
-  url: 'https://punkapi.com/api/v1/beers',
+  url: 'https://punkapi.com/api/v1/beers?page=' + page,
   beforeSend: function (xhr){
         xhr.setRequestHeader('Authorization', make_base_auth("67407d21d3264e49a5301522c743204d", ""));
     },
@@ -31,3 +52,7 @@ promise.done(function(data){
   console.log(html)
   beerStuffList.innerHTML = html;
 });
+
+}
+
+thePage();

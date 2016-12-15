@@ -46,12 +46,3 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
-ul{
-	font-weight: bold;
-	padding-left: 25px;
-	padding-top: 15px;
-}
-li{
-	padding: 5px 0;
-	font-weight: normal;
-}
