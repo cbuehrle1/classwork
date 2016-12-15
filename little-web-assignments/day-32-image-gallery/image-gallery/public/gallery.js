@@ -24,18 +24,17 @@
   });
 
   thumbnails.addEventListener("click", function(evt){
-    console.log(evt.target)
+
     display.innerHTML = ""
     var index = evt.target.getAttribute("data-index");
-    var selectedPic = apiPics.pictures[index]
+    var selectedPic = apiPics.pictures[index];
+    var scriptyTemplate = document.querySelector("#template");
+    var templateHtml = scriptyTemplate.innerHTML
 
-    var displayImg = document.createElement("img");
-    displayImg.src = selectedPic.fullSize
-    display.appendChild(displayImg);
+    var output = Mustache.render(templateHtml, selectedPic);
 
-    var description = document.createElement("p")
-    description.textContent = selectedPic.description
-    display.appendChild(description);
+    display.innerHTML = output;
+
 
   });
 

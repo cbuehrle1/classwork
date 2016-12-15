@@ -1,22 +1,28 @@
 <!DOCTYPE html>
-<html>
+
+<html lang="en">
+
   <head>
     <meta charset="utf-8">
-    <title>Image Gallery</title>
+    <title>beer-api</title>
     <link href="style.css" rel="stylesheet" />
   </head>
+
   <body>
-    <div class="big-pic">
-      <h1>Select a Picture</h1>
-    </div>
-    <div class="thumbnail">
-    </div>
-    <script type="text/html" id="template">
-      <img src="{{fullSize}}" />
-      <p>{{description}}</p>
+    <h1>beer-api</h1>
+
+    <ul class="beer-stuff">
+    </ul>
+    <script type="text/html" class="beer-template">
+      <ul>
+        {{#ingredients.malt}}
+          <li>{{name}}</li>
+        {{/ingredients.malt}}
+      </ul>
     </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/oj.mustache/0.7.2/oj.mustache.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <script src="gallery.js"></script>
+    <script src="script.js"></script>
   </body>
+
 </html>
