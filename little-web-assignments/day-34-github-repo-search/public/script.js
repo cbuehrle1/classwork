@@ -40,9 +40,12 @@
 
   clientInput.addEventListener("keyup", function(evt){
 
+    page = 1;
+
     if (evt.keyCode === 13){
       getData();
       prevB.classList.add("grey");
+      console.log(page);
     }
 
   });
