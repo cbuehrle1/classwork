@@ -41,8 +41,15 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
+img {
+  width: 200px; }
+
+.post-body {
+  border: solid 1px black;
+  background-color: whitesmoke; }
+
 h1 {
-  color: red; }
+  color: blue; }
 
 .toggled {
   background-color: red; }
