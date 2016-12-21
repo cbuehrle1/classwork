@@ -1,0 +1,194 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+.container{
+  overflow: auto;
+  font-family: Verlag A, Verlag B, Helvetica, Arial, sans-serif;
+  color: white;
+  font-weight: lighter;
+}
+h2{
+  font-size: 3.5em;
+  padding-left: 5%;
+  padding-right: 5%;
+  margin-top: 2.5em;
+  vertical-align: middle;
+  transition-property: margin-top;
+  transition-duration: 100ms;
+  transition-timing-function: ease-out;
+  transition-delay: initial;
+}
+.more{
+  margin-top: 2em;
+  transition-property: margin-top;
+  transition-duration: 100ms;
+  transition-timing-function: ease-out;
+  transition-delay: initial;
+}
+p{
+  font-size: 1.38em;
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  vertical-align: middle;
+}
+.left{
+  float: left;
+  width: 33.3%;
+  height: 400px;
+  outline: solid 1px black;
+  background-image: url("http://d36s929gmfcqwt.cloudfront.net/assets/cellucor-900-f5184e18ba82098b3fb785136068ea366452d8255e6f7d3ae12f081511ace1a3.jpg");
+  background-size: cover;
+  background-position: -75px 0;
+}
+.background{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 33.3%;
+  background-color: rgba(0, 0, 0, .5);
+  height: 400px;
+  display: block;
+  text-align: center;
+}
+.background-2{
+  position: absolute;
+  top: 0;
+  left: 33.3%;
+  width: 32.5%;
+  margin-left: 1%;
+  background-color: rgba(0, 0, 0, .5);
+  height: 400px;
+  display: block;
+  text-align: center;
+  vertical-align: middle;
+}
+.background-3{
+  position: absolute;
+  top: 0;
+  left: 66.6%;
+  margin-left: 1%;
+  width: 32.5%;
+  background-color: rgba(0, 0, 0, .5);
+  height: 400px;
+  display: block;
+  text-align: center;
+  vertical-align: middle;
+}
+.middle{
+  float: left;
+  width: 32.5%;
+  height: 400px;
+  margin-left: 1%;
+  outline: solid 1px black;
+  background-image: url("http://d36s929gmfcqwt.cloudfront.net/assets/over-900-53c527bebb017cd9c1700ffc2b20a6cc57826bfae40ecb75f62b78d88163a5aa.jpg");
+  background-size: cover;
+  background-position: -75px 0;
+}
+.right{
+  float: left;
+  width: 32.2%;
+  height: 400px;
+  margin-left: 1%;
+  outline: solid 1px black;
+  background-image: url("http://d36s929gmfcqwt.cloudfront.net/assets/bts-900-3f97cb6396ffc3afb67dce1fd5545709254b2ffdd261dd9106b57327d8d158e0.jpg");
+  background-size: cover;
+  background-position: -75px 0;
+}
+.button{
+  padding: 10px;
+  color: white;
+  border: solid 2px white;
+  opacity: 0;
+  display: inline-block;
+}
+.button-2{
+  padding: 10px;
+  color: white;
+  border: solid 2px white;
+  opacity: 0;
+  display: inline-block;
+}
+
+.button-3{
+  padding: 10px;
+  color: white;
+  border: solid 2px white;
+  opacity: 0;
+  display: inline-block;
+}
+
+.background:hover .button{
+  opacity: 1;
+}
+.background:hover h2{
+  transition-property: margin-top;
+  margin-top: 2em;
+}
+.background-2:hover h2{
+  transition-property: margin-top;
+  margin-top: 2em;
+}
+.background-3:hover .more{
+  transition-property: margin-top;
+  margin-top: 1.5em;
+}
+.background-2:hover .button-2{
+  opacity: 1;
+}
+.background-3:hover .button-3{
+  opacity: 1;
+}
+.button:hover{
+  background-color: white;
+  color: #000;
+}
+.button-2:hover{
+  background-color: white;
+  color: #000;
+}
+.button-3:hover{
+  background-color: white;
+  color: #000;
+}

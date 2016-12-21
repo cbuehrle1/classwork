@@ -644,16 +644,16 @@ function removeCountyAndYear (data) {
 
   var output = data.map(function(age){
 
-  return {
-    age: age.age,
-    females: age.females,
-    males: age.males,
-    total: age.total
-  };
+    return {
+      age: age.age,
+      females: age.females,
+      males: age.males,
+      total: age.total
+    };
 
   });
   return output;
-}
+};
 
 var result = removeCountyAndYear(dataset);
 //

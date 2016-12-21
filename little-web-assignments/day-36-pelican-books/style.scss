@@ -1,0 +1,31 @@
+@import "css-reset.scss";
+
+$backgroundColor: rgba(0, 200, 200, 0.8);
+.container{
+  background-color: $backgroundColor;
+}
+.login{
+  text-align: right;
+}
+.header img{
+  width: 168px;
+}
+.header{
+  width: 960px;
+  margin: 0px auto;
+}
+.FAQ-item{
+}
+.content-container{
+  overflow: auto;
+}
+.body-content{
+  float:left;
+  width: 40%;
+}
+.image-content{
+  float: left;
+  width: 60%;
+  overflow: hidden;
+  padding: 20px 0;
+}
