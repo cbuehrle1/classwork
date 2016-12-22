@@ -1,0 +1,1 @@
+{"version":3,"file":"style.css","sources":["style.scss"],"sourcesContent":["h1{\n  color: red;\n}\np{\n  color: yellow;\n}\n.bernard{\n  color: pink;\n}\n"],"names":[],"mappings":"AAAA,AAAA,EAAE,CAAA;EACA,KAAK,EAAE,GAAG,GACX;;AACD,AAAA,CAAC,CAAA;EACC,KAAK,EAAE,MAAM,GACd;;AACD,AAAA,QAAQ,CAAA;EACN,KAAK,EAAE,IAAI,GACZ"}
