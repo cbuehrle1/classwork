@@ -1,0 +1,17 @@
+@import 'reset';
+
+p {
+  color: red;
+}
+.list{
+  padding-left: 20px;
+}
+.lunch-component{
+  padding-bottom: 5px;
+  list-style-type: square;
+}
+.food-component{
+  margin-left: 20px;
+  padding-bottom: 5px;
+  list-style-type: circle;
+}
