@@ -46,12 +46,26 @@ window.SW = window.SW || {};
             React.createElement(
               "li",
               null,
+              "Diameter: ",
               this.props.planet.diameter
             ),
             React.createElement(
               "li",
               null,
+              "Climate: ",
               this.props.planet.climate
+            ),
+            React.createElement(
+              "li",
+              null,
+              "Terrain: ",
+              this.props.planet.terrain
+            ),
+            React.createElement(
+              "li",
+              null,
+              "Population: ",
+              this.props.planet.population
             )
           );
         }

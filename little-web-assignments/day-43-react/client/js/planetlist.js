@@ -24,8 +24,10 @@ window.SW = window.SW || {};
       if (this.state.selected != false) {
         theDetails =
         <ul className="details">
-          <li>{this.props.planet.diameter}</li>
-          <li>{this.props.planet.climate}</li>
+          <li>Diameter: {this.props.planet.diameter}</li>
+          <li>Climate: {this.props.planet.climate}</li>
+          <li>Terrain: {this.props.planet.terrain}</li>
+          <li>Population: {this.props.planet.population}</li>
         </ul>
       }
 
