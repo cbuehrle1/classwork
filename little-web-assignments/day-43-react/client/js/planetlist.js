@@ -10,17 +10,9 @@ window.SW = window.SW || {};
       }
     }
     clicky() {
-    
-      if (this.state.selected === false) {
-        this.setState({
-          selected: true
-        });
-      } else {
-        this.setState({
-          selected: false
-        });
-      }
-
+    this.setState({
+      selected: !this.state.selected
+    })
 
     }
 
@@ -46,10 +38,6 @@ window.SW = window.SW || {};
 
 
   class PlanetList extends React.Component {
-
-    constructor() {
-      super();
-    }
 
     componentDidMount() {
       this.load();

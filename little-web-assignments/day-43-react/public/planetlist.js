@@ -28,16 +28,9 @@ window.SW = window.SW || {};
     _createClass(PlanetDetails, [{
       key: "clicky",
       value: function clicky() {
-
-        if (this.state.selected === false) {
-          this.setState({
-            selected: true
-          });
-        } else {
-          this.setState({
-            selected: false
-          });
-        }
+        this.setState({
+          selected: !this.state.selected
+        });
       }
     }, {
       key: "render",
@@ -87,7 +80,7 @@ window.SW = window.SW || {};
     function PlanetList() {
       _classCallCheck(this, PlanetList);
 
-      return _possibleConstructorReturn(this, (PlanetList.__proto__ || Object.getPrototypeOf(PlanetList)).call(this));
+      return _possibleConstructorReturn(this, (PlanetList.__proto__ || Object.getPrototypeOf(PlanetList)).apply(this, arguments));
     }
 
     _createClass(PlanetList, [{
