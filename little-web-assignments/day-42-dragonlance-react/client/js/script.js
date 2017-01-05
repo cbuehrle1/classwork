@@ -1,5 +1,13 @@
 var mountNode = document.querySelector('#react-root');
 
+class Thingy extends React.Component {
+  render() { return <li>
+      <div className="name">{this.props.char.name}</div>
+      <div className="items">{this.props.char.race}</div>
+      <div className="items">{this.props.char.description}</div>
+    </li>
+  }
+}
 
 class AppComponent extends React.Component {
 
@@ -32,11 +40,7 @@ class AppComponent extends React.Component {
 
     return <div>
       <ul>
-        {this.state.data.char.map((character, index) => { return <li key={index}>
-          <div className="name">{character.name}</div>
-          <div className="items">{character.race}</div>
-          <div className="items">{character.description}</div>
-        </li>})}
+        {this.state.data.char.map((character, index) => { return <Thingy key={index} char={character} />})}
       </ul>
     </div>
 

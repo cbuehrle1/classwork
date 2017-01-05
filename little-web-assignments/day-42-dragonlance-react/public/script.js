@@ -10,31 +10,68 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 
 var mountNode = document.querySelector('#react-root');
 
-var AppComponent = function (_React$Component) {
-  _inherits(AppComponent, _React$Component);
+var Thingy = function (_React$Component) {
+  _inherits(Thingy, _React$Component);
+
+  function Thingy() {
+    _classCallCheck(this, Thingy);
+
+    return _possibleConstructorReturn(this, (Thingy.__proto__ || Object.getPrototypeOf(Thingy)).apply(this, arguments));
+  }
+
+  _createClass(Thingy, [{
+    key: "render",
+    value: function render() {
+      return React.createElement(
+        "li",
+        null,
+        React.createElement(
+          "div",
+          { className: "name" },
+          this.props.char.name
+        ),
+        React.createElement(
+          "div",
+          { className: "items" },
+          this.props.char.race
+        ),
+        React.createElement(
+          "div",
+          { className: "items" },
+          this.props.char.description
+        )
+      );
+    }
+  }]);
+
+  return Thingy;
+}(React.Component);
+
+var AppComponent = function (_React$Component2) {
+  _inherits(AppComponent, _React$Component2);
 
   function AppComponent() {
     _classCallCheck(this, AppComponent);
 
-    var _this = _possibleConstructorReturn(this, (AppComponent.__proto__ || Object.getPrototypeOf(AppComponent)).call(this));
+    var _this2 = _possibleConstructorReturn(this, (AppComponent.__proto__ || Object.getPrototypeOf(AppComponent)).call(this));
 
-    _this.state = {
+    _this2.state = {
       data: {
         char: []
       }
     };
-    return _this;
+    return _this2;
   }
 
   _createClass(AppComponent, [{
     key: "ajaxCall",
     value: function ajaxCall() {
-      var _this2 = this;
+      var _this3 = this;
 
       $.ajax({
         url: "http://localhost:5003/api/dragonlance"
       }).done(function (data) {
-        _this2.setState({
+        _this3.setState({
           data: {
             char: data.characters
           }
@@ -54,25 +91,7 @@ var AppComponent = function (_React$Component) {
           "ul",
           null,
           this.state.data.char.map(function (character, index) {
-            return React.createElement(
-              "li",
-              { key: index },
-              React.createElement(
-                "div",
-                { className: "name" },
-                character.name
-              ),
-              React.createElement(
-                "div",
-                { className: "items" },
-                character.race
-              ),
-              React.createElement(
-                "div",
-                { className: "items" },
-                character.description
-              )
-            );
+            return React.createElement(Thingy, { key: index, char: character });
           })
         )
       );
