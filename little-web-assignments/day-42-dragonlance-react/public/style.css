@@ -45,7 +45,30 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
-p {
+.container {
+  width: 960px;
+  margin: 0 auto;
+  padding-bottom: 50px; }
+
+h2 {
+  font-size: 48px;
+  color: blue;
+  text-align: center;
+  margin: 50px; }
+
+.name {
+  font-size: 32px;
+  font-weight: bold;
   color: red; }
+
+.items {
+  padding-top: 10px;
+  margin-left: 20px; }
+
+ul {
+  margin-left: 25px; }
+
+li {
+  padding-bottom: 10px; }
 
 /*# sourceMappingURL=style.css.map */

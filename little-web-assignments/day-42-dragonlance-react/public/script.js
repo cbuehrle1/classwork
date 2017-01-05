@@ -10,48 +10,31 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 
 var mountNode = document.querySelector('#react-root');
 
-var SmallComponent = function (_React$Component) {
-  _inherits(SmallComponent, _React$Component);
-
-  function SmallComponent() {
-    _classCallCheck(this, SmallComponent);
-
-    return _possibleConstructorReturn(this, (SmallComponent.__proto__ || Object.getPrototypeOf(SmallComponent)).apply(this, arguments));
-  }
-
-  return SmallComponent;
-}(React.Component);
-
-var AppComponent = function (_React$Component2) {
-  _inherits(AppComponent, _React$Component2);
+var AppComponent = function (_React$Component) {
+  _inherits(AppComponent, _React$Component);
 
   function AppComponent() {
     _classCallCheck(this, AppComponent);
 
-    var _this2 = _possibleConstructorReturn(this, (AppComponent.__proto__ || Object.getPrototypeOf(AppComponent)).call(this));
+    var _this = _possibleConstructorReturn(this, (AppComponent.__proto__ || Object.getPrototypeOf(AppComponent)).call(this));
 
-    _this2.state = {
+    _this.state = {
       data: {
         char: []
       }
     };
-    return _this2;
+    return _this;
   }
 
   _createClass(AppComponent, [{
-    key: "componentDidMount",
-    value: function componentDidMount() {
-      this.ajaxCall();
-    }
-  }, {
     key: "ajaxCall",
     value: function ajaxCall() {
-      var _this3 = this;
+      var _this2 = this;
 
       $.ajax({
         url: "http://localhost:5003/api/dragonlance"
       }).done(function (data) {
-        _this3.setState({
+        _this2.setState({
           data: {
             char: data.characters
           }
@@ -61,6 +44,8 @@ var AppComponent = function (_React$Component2) {
   }, {
     key: "render",
     value: function render() {
+
+      this.ajaxCall();
 
       return React.createElement(
         "div",
@@ -72,7 +57,21 @@ var AppComponent = function (_React$Component2) {
             return React.createElement(
               "li",
               { key: index },
-              character.name
+              React.createElement(
+                "div",
+                { className: "name" },
+                character.name
+              ),
+              React.createElement(
+                "div",
+                { className: "items" },
+                character.race
+              ),
+              React.createElement(
+                "div",
+                { className: "items" },
+                character.description
+              )
             );
           })
         )

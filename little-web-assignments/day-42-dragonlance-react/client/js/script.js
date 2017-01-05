@@ -1,8 +1,5 @@
 var mountNode = document.querySelector('#react-root');
 
-class SmallComponent extends React.Component {
-  
-}
 
 class AppComponent extends React.Component {
 
@@ -14,10 +11,6 @@ class AppComponent extends React.Component {
         char: []
       }
     }
-  }
-
-  componentDidMount() {
-    this.ajaxCall();
   }
 
   ajaxCall() {
@@ -35,9 +28,15 @@ class AppComponent extends React.Component {
 
   render() {
 
+    this.ajaxCall();
+
     return <div>
       <ul>
-        {this.state.data.char.map((character, index) => { return <li key={index}>{character.name}</li>})}
+        {this.state.data.char.map((character, index) => { return <li key={index}>
+          <div className="name">{character.name}</div>
+          <div className="items">{character.race}</div>
+          <div className="items">{character.description}</div>
+        </li>})}
       </ul>
     </div>
 
