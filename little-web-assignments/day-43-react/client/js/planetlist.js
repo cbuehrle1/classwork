@@ -3,17 +3,18 @@ window.SW = window.SW || {};
 (() => {
 
   class PlanetDetails extends React.Component {
+
     constructor() {
       super();
       this.state = {
         selected: false
       }
     }
-    clicky() {
-    this.setState({
-      selected: !this.state.selected
-    })
 
+    clicky() {
+      this.setState({
+        selected: !this.state.selected
+      });
     }
 
     render() {
