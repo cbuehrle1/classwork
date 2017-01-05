@@ -21,6 +21,10 @@ class AppComponent extends React.Component {
     }
   }
 
+  componentDidMount() {
+      this.ajaxCall();
+  }
+
   ajaxCall() {
     $.ajax({
       url: "http://localhost:5003/api/dragonlance"
@@ -35,8 +39,6 @@ class AppComponent extends React.Component {
   }
 
   render() {
-
-    this.ajaxCall();
 
     return <div>
       <ul>

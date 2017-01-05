@@ -64,6 +64,11 @@ var AppComponent = function (_React$Component2) {
   }
 
   _createClass(AppComponent, [{
+    key: "componentDidMount",
+    value: function componentDidMount() {
+      this.ajaxCall();
+    }
+  }, {
     key: "ajaxCall",
     value: function ajaxCall() {
       var _this3 = this;
@@ -81,8 +86,6 @@ var AppComponent = function (_React$Component2) {
   }, {
     key: "render",
     value: function render() {
-
-      this.ajaxCall();
 
       return React.createElement(
         "div",
