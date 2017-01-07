@@ -24,17 +24,25 @@ var ListItem = function (_React$Component) {
     value: function render() {
       return React.createElement(
         "li",
-        null,
+        { className: "indiv-item" },
         React.createElement(
           "div",
-          null,
-          this.props.repo.name
+          { className: "repo-title" },
+          React.createElement(
+            "a",
+            { href: this.props.repo.html_url },
+            this.props.repo.name
+          )
         ),
         React.createElement(
           "div",
           null,
           "by ",
-          this.props.repo.owner.login
+          React.createElement(
+            "a",
+            { href: this.props.repo.owner.html_url },
+            this.props.repo.owner.login
+          )
         )
       );
     }
@@ -51,7 +59,7 @@ var BaseComponent = function (_React$Component2) {
 
     var _this2 = _possibleConstructorReturn(this, (BaseComponent.__proto__ || Object.getPrototypeOf(BaseComponent)).call(this));
 
-    _this2.state = { data: { items: [], total_count: 0 }, page: 1 };
+    _this2.state = { data: { items: [], total_count: 0 }, page: 1, show: "", greyPrev: "", greyNext: "" };
     return _this2;
   }
 
@@ -89,11 +97,29 @@ var BaseComponent = function (_React$Component2) {
       $.ajax({
         url: "https://api.github.com/search/repositories?q=" + query
       }).done(function (data) {
-        console.log(page);
-        _this3.setState({ data: {
-            items: data.items, total_count: data.total_count },
-          page: page
-        });
+
+        if (page === 1) {
+          _this3.setState({ data: {
+              items: data.items, total_count: data.total_count },
+            page: page,
+            show: "show",
+            greyPrev: "grey",
+            greyNext: "" });
+        } else if (page < data.total_count / 30) {
+          _this3.setState({ data: {
+              items: data.items, total_count: data.total_count },
+            page: page,
+            show: "show",
+            greyPrev: "",
+            greyNext: "" });
+        } else if (page >= data.total_count / 30) {
+          _this3.setState({ data: {
+              items: data.items, total_count: data.total_count },
+            page: page,
+            show: "show",
+            greyPrev: "",
+            greyNext: "grey" });
+        }
       });
     }
   }, {
@@ -115,30 +141,34 @@ var BaseComponent = function (_React$Component2) {
 
       return React.createElement(
         "div",
-        null,
+        { className: "container" },
         React.createElement("input", { placeholder: "Search", ref: function ref(input) {
             _this4.theInput = input;
           }, onKeyUp: function onKeyUp(evt) {
             _this4.pressedEnter(evt);
           } }),
         React.createElement(
-          "button",
-          { onClick: function onClick() {
-              _this4.nextPage();
-            } },
-          "Next"
-        ),
-        React.createElement(
           "div",
-          { className: "page-number" },
-          this.state.page
-        ),
-        React.createElement(
-          "button",
-          { onClick: function onClick() {
-              _this4.prevPage();
-            } },
-          "Previous"
+          { className: "button-div" },
+          React.createElement(
+            "button",
+            { className: this.state.show + " " + this.state.greyNext, onClick: function onClick() {
+                _this4.nextPage();
+              } },
+            "Next"
+          ),
+          React.createElement(
+            "span",
+            { className: this.state.show },
+            this.state.page
+          ),
+          React.createElement(
+            "button",
+            { className: this.state.show + " " + this.state.greyPrev, onClick: function onClick() {
+                _this4.prevPage();
+              } },
+            "Previous"
+          )
         ),
         display
       );

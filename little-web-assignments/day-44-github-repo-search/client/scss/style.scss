@@ -3,6 +3,42 @@
 p {
   color: red;
 }
-.page-number{
-  display: inline;
+span{
+  opacity: 0;
+  padding: 10px;
+  background-color: orange;
+  color: white;
+}
+button{
+  opacity: 0;
+  vertical-align: middle;
+  margin: 0 10px;
+}
+.repo-title{
+  font-weight: bold;
+  font-size: 24px;
+}
+.container{
+  width: 960px;
+  margin: 0 auto;
+}
+input{
+  width: 50%;
+  display: block;
+  margin: 0 auto;
+}
+.button-div{
+  margin: 20px;
+  text-align: center;
+}
+.show{
+  opacity: 1;
+}
+.grey{
+  opacity: 0;
+}
+.indiv-item{
+  padding: 20px;
+  border: solid 1px black;
+  font-size: 18px;
 }
