@@ -3,7 +3,7 @@ var mountNode = document.querySelector('#react-root');
 class ListItem extends React.Component {
   render() {
     return <li className="indiv-item"><div className="repo-title"><a href={this.props.repo.html_url}>{this.props.repo.name}</a></div>
-      <div>by <a href={this.props.repo.owner.html_url}>{this.props.repo.owner.login}</a></div>
+      <div>by <a className="anchor-color" href={this.props.repo.owner.html_url}>{this.props.repo.owner.login}</a></div>
       </li>;
   }
 }

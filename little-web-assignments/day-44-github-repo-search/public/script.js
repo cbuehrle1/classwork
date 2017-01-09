@@ -40,7 +40,7 @@ var ListItem = function (_React$Component) {
           "by ",
           React.createElement(
             "a",
-            { href: this.props.repo.owner.html_url },
+            { className: "anchor-color", href: this.props.repo.owner.html_url },
             this.props.repo.owner.login
           )
         )
