@@ -47,27 +47,21 @@ class BaseComponent extends React.Component {
     })
     .done((data) => {
 
+        function editShowHide(f, a, b, c, d, e) {
+          f.setState({ data: {
+            items: a.items, total_count: a.total_count },
+            page: b,
+            show: c,
+            greyPrev: d,
+            greyNext: e })
+        }
+
         if (page === 1){
-          this.setState({ data: {
-            items: data.items, total_count: data.total_count },
-            page: page,
-            show: "show",
-            greyPrev: "grey",
-            greyNext: "" })
+          editShowHide(this, data, page, "show", "grey", "");
           } else if (page < data.total_count / 30) {
-          this.setState({ data: {
-            items: data.items, total_count: data.total_count },
-            page: page,
-            show: "show",
-            greyPrev: "",
-            greyNext: "" })
+          editShowHide(this, data, page, "show", "", "");
         } else if (page >= data.total_count / 30) {
-          this.setState({ data: {
-            items: data.items, total_count: data.total_count },
-            page: page,
-            show: "show",
-            greyPrev: "",
-            greyNext: "grey" })
+          editShowHide(this, data, page, "show", "", "grey");
         }
 
     });

@@ -98,27 +98,21 @@ var BaseComponent = function (_React$Component2) {
         url: "https://api.github.com/search/repositories?q=" + query
       }).done(function (data) {
 
+        function editShowHide(f, a, b, c, d, e) {
+          f.setState({ data: {
+              items: a.items, total_count: a.total_count },
+            page: b,
+            show: c,
+            greyPrev: d,
+            greyNext: e });
+        }
+
         if (page === 1) {
-          _this3.setState({ data: {
-              items: data.items, total_count: data.total_count },
-            page: page,
-            show: "show",
-            greyPrev: "grey",
-            greyNext: "" });
+          editShowHide(_this3, data, page, "show", "grey", "");
         } else if (page < data.total_count / 30) {
-          _this3.setState({ data: {
-              items: data.items, total_count: data.total_count },
-            page: page,
-            show: "show",
-            greyPrev: "",
-            greyNext: "" });
+          editShowHide(_this3, data, page, "show", "", "");
         } else if (page >= data.total_count / 30) {
-          _this3.setState({ data: {
-              items: data.items, total_count: data.total_count },
-            page: page,
-            show: "show",
-            greyPrev: "",
-            greyNext: "grey" });
+          editShowHide(_this3, data, page, "show", "", "grey");
         }
       });
     }
