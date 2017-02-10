@@ -1,0 +1,2 @@
+This repository holds all of the class assignments starting from day 1 in October through the beginning of January before I started working on my final project. Before starting the course I had very little experience with coding and you can see the evolution and development of my skills drastically improve from start to finish. 
+Some of the assignments were very trivial and designed to learn small concepts in isolation, while others were more involved and demonstrate the continued development and combination of skills learned in the scope of a week. 
